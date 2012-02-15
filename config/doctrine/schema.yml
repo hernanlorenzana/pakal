@@ -1,0 +1,673 @@
+Banco:
+  connection: doctrine
+  tableName: banco
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre_banco:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Semilla:
+      local: id
+      foreign: fk_banco
+      type: many
+Estado:
+  connection: doctrine
+  tableName: estado
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Historial:
+      local: id
+      foreign: fk_estado
+      type: many
+Estadotarea:
+  connection: doctrine
+  tableName: estadotarea
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Tarea:
+      local: id
+      foreign: fk_id_estadotarea
+      type: many
+Etapa:
+  connection: doctrine
+  tableName: etapa
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Historial:
+      local: id
+      foreign: fk_etapa
+      type: many
+Historial:
+  connection: doctrine
+  tableName: historial
+  columns:
+    fk_planta:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    litraje:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    temperatura:
+      type: 'decimal(11, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    altura:
+      type: 'decimal(11, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fk_tipo_cultivo:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    hora_luz:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    hora_oscuridad:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    humedad:
+      type: 'decimal(11, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ph:
+      type: 'decimal(11, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fk_estado:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fk_etapa:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    fk_luz:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Estado:
+      local: fk_estado
+      foreign: id
+      type: one
+    Etapa:
+      local: fk_etapa
+      foreign: id
+      type: one
+    Luz:
+      local: fk_luz
+      foreign: id
+      type: one
+    Planta:
+      local: fk_planta
+      foreign: id
+      type: one
+    TipoCultivo:
+      local: fk_tipo_cultivo
+      foreign: id
+      type: one
+Localidad:
+  connection: doctrine
+  tableName: localidad
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    nombre:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    x:
+      type: float(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.0000000000'
+      notnull: true
+      autoincrement: false
+    y:
+      type: float(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.0000000000'
+      notnull: true
+      autoincrement: false
+    fk_region:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Region:
+      local: fk_region
+      foreign: id
+      type: one
+    Usuario:
+      local: id
+      foreign: fk_localidad
+      type: many
+Luz:
+  connection: doctrine
+  tableName: luz
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    fk_tipo_luz:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    potencia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    TipoLuz:
+      local: fk_tipo_luz
+      foreign: id
+      type: one
+    Historial:
+      local: id
+      foreign: fk_luz
+      type: many
+Pais:
+  connection: doctrine
+  tableName: pais
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    nombre:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    x:
+      type: float(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.0000000000'
+      notnull: true
+      autoincrement: false
+    y:
+      type: float(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.0000000000'
+      notnull: true
+      autoincrement: false
+  relations:
+    Region:
+      local: id
+      foreign: fk_pais
+      type: many
+Planta:
+  connection: doctrine
+  tableName: planta
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fk_usuario:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fk_semilla:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha_nacimiento:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    madre:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    esqueje:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Semilla:
+      local: fk_semilla
+      foreign: id
+      type: one
+    Usuario:
+      local: fk_usuario
+      foreign: id
+      type: one
+    Historial:
+      local: id
+      foreign: fk_planta
+      type: many
+    Tarea:
+      local: id
+      foreign: fk_id_planta
+      type: many
+Region:
+  connection: doctrine
+  tableName: region
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    nombre:
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    x:
+      type: float(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.0000000000'
+      notnull: true
+      autoincrement: false
+    y:
+      type: float(13)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.0000000000'
+      notnull: true
+      autoincrement: false
+    fk_pais:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Pais:
+      local: fk_pais
+      foreign: id
+      type: one
+    Localidad:
+      local: id
+      foreign: fk_region
+      type: many
+Semilla:
+  connection: doctrine
+  tableName: semilla
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre_semilla:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fk_banco:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Banco:
+      local: fk_banco
+      foreign: id
+      type: one
+    Planta:
+      local: id
+      foreign: fk_semilla
+      type: many
+Tarea:
+  connection: doctrine
+  tableName: tarea
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    fecha_inicio:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_final:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    periodisidad:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fk_id_planta:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fk_id_estadotarea:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fk_id_tipotarea:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Estadotarea:
+      local: fk_id_estadotarea
+      foreign: id
+      type: one
+    Planta:
+      local: fk_id_planta
+      foreign: id
+      type: one
+    Tipotarea:
+      local: fk_id_tipotarea
+      foreign: id
+      type: one
+TipoCultivo:
+  connection: doctrine
+  tableName: tipo_cultivo
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre_cultivo:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Historial:
+      local: id
+      foreign: fk_tipo_cultivo
+      type: many
+TipoLuz:
+  connection: doctrine
+  tableName: tipo_luz
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Luz:
+      local: id
+      foreign: fk_tipo_luz
+      type: many
+Tipotarea:
+  connection: doctrine
+  tableName: tipotarea
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Tarea:
+      local: id
+      foreign: fk_id_tipotarea
+      type: many
+Usuario:
+  connection: doctrine
+  tableName: usuario
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    apellido:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nick:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fk_localidad:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Localidad:
+      local: fk_localidad
+      foreign: id
+      type: one
+    Planta:
+      local: id
+      foreign: fk_usuario
+      type: many
