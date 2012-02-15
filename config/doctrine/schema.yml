@@ -531,7 +531,7 @@ Tarea:
       primary: false
       notnull: true
       autoincrement: false
-    fk_id_tipotarea:
+    fk_id_tipo_tarea:
       type: integer(4)
       fixed: false
       unsigned: false
@@ -548,7 +548,7 @@ Tarea:
       foreign: id
       type: one
     Tipotarea:
-      local: fk_id_tipotarea
+      local: fk_id_tipo_tarea
       foreign: id
       type: one
 TipoCultivo:
@@ -595,9 +595,9 @@ TipoLuz:
       local: id
       foreign: fk_tipo_luz
       type: many
-Tipotarea:
+TipoTarea:
   connection: doctrine
-  tableName: tipotarea
+  tableName: tipo_tarea
   columns:
     id:
       type: integer(4)
@@ -615,7 +615,7 @@ Tipotarea:
   relations:
     Tarea:
       local: id
-      foreign: fk_id_tipotarea
+      foreign: fk_id_tipo_tarea
       type: many
 Usuario:
   connection: doctrine
