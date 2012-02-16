@@ -42,9 +42,9 @@ Estado:
       local: id
       foreign: fk_estado
       type: many
-Estadotarea:
+EstadoTarea:
   connection: doctrine
-  tableName: estadotarea
+  tableName: estado_tarea
   columns:
     id:
       type: integer(4)
@@ -62,7 +62,7 @@ Estadotarea:
   relations:
     Tarea:
       local: id
-      foreign: fk_id_estadotarea
+      foreign: fk_id_estado_tarea
       type: many
 Etapa:
   connection: doctrine
@@ -178,7 +178,7 @@ Historial:
       fixed: false
       unsigned: false
       primary: false
-      notnull: false
+      notnull: true
       autoincrement: false
     fecha:
       type: date(25)
@@ -196,16 +196,16 @@ Historial:
       local: fk_etapa
       foreign: id
       type: one
-    Luz:
-      local: fk_luz
-      foreign: id
-      type: one
     Planta:
       local: fk_planta
       foreign: id
       type: one
     TipoCultivo:
       local: fk_tipo_cultivo
+      foreign: id
+      type: one
+    Luz:
+      local: fk_luz
       foreign: id
       type: one
 Localidad:
@@ -226,19 +226,19 @@ Localidad:
       notnull: true
       autoincrement: false
     x:
-      type: float(13)
+      type: float(13,10)
       fixed: false
       unsigned: false
       primary: false
-      default: '0.0000000000'
+      default: '0.00'
       notnull: true
       autoincrement: false
     y:
-      type: float(13)
+      type: float(13,10)
       fixed: false
       unsigned: false
       primary: false
-      default: '0.0000000000'
+      default: '0.00'
       notnull: true
       autoincrement: false
     fk_region:
@@ -272,17 +272,17 @@ Luz:
       fixed: false
       unsigned: false
       primary: false
-      notnull: false
+      notnull: true
       autoincrement: false
-    potencia:
+    fk_pot_luz:
       type: integer(4)
       fixed: false
       unsigned: false
       primary: false
-      notnull: false
+      notnull: true
       autoincrement: false
-    nombre:
-      type: string(45)
+    fk_usuario:
+      type: integer(4)
       fixed: false
       unsigned: false
       primary: false
@@ -291,6 +291,14 @@ Luz:
   relations:
     TipoLuz:
       local: fk_tipo_luz
+      foreign: id
+      type: one
+    PotLuz:
+      local: fk_pot_luz
+      foreign: id
+      type: one
+    Usuario:
+      local: fk_usuario
       foreign: id
       type: one
     Historial:
@@ -315,19 +323,19 @@ Pais:
       notnull: true
       autoincrement: false
     x:
-      type: float(13)
+      type: float(13,10)
       fixed: false
       unsigned: false
       primary: false
-      default: '0.0000000000'
+      default: '0.00'
       notnull: true
       autoincrement: false
     y:
-      type: float(13)
+      type: float(13,10)
       fixed: false
       unsigned: false
       primary: false
-      default: '0.0000000000'
+      default: '0.00'
       notnull: true
       autoincrement: false
   relations:
@@ -357,14 +365,14 @@ Planta:
       fixed: false
       unsigned: false
       primary: false
-      notnull: false
+      notnull: true
       autoincrement: false
     fk_semilla:
       type: integer(4)
       fixed: false
       unsigned: false
       primary: false
-      notnull: false
+      notnull: true
       autoincrement: false
     fecha_nacimiento:
       type: date(25)
@@ -404,6 +412,28 @@ Planta:
       local: id
       foreign: fk_id_planta
       type: many
+PotLuz:
+  connection: doctrine
+  tableName: pot_luz
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    potencia:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Luz:
+      local: id
+      foreign: fk_pot_luz
+      type: many
 Region:
   connection: doctrine
   tableName: region
@@ -422,19 +452,19 @@ Region:
       notnull: true
       autoincrement: false
     x:
-      type: float(13)
+      type: float(13,10)
       fixed: false
       unsigned: false
       primary: false
-      default: '0.0000000000'
+      default: '0.00'
       notnull: true
       autoincrement: false
     y:
-      type: float(13)
+      type: float(13,10)
       fixed: false
       unsigned: false
       primary: false
-      default: '0.0000000000'
+      default: '0.00'
       notnull: true
       autoincrement: false
     fk_pais:
@@ -524,7 +554,7 @@ Tarea:
       primary: false
       notnull: true
       autoincrement: false
-    fk_id_estadotarea:
+    fk_id_estado_tarea:
       type: integer(4)
       fixed: false
       unsigned: false
@@ -539,15 +569,15 @@ Tarea:
       notnull: true
       autoincrement: false
   relations:
-    Estadotarea:
-      local: fk_id_estadotarea
+    EstadoTarea:
+      local: fk_id_estado_tarea
       foreign: id
       type: one
     Planta:
       local: fk_id_planta
       foreign: id
       type: one
-    Tipotarea:
+    TipoTarea:
       local: fk_id_tipo_tarea
       foreign: id
       type: one
@@ -667,6 +697,10 @@ Usuario:
       local: fk_localidad
       foreign: id
       type: one
+    Luz:
+      local: id
+      foreign: fk_usuario
+      type: many
     Planta:
       local: id
       foreign: fk_usuario
