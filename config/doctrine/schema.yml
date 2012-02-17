@@ -196,16 +196,16 @@ Historial:
       local: fk_etapa
       foreign: id
       type: one
+    Luz:
+      local: fk_luz
+      foreign: id
+      type: one
     Planta:
       local: fk_planta
       foreign: id
       type: one
     TipoCultivo:
       local: fk_tipo_cultivo
-      foreign: id
-      type: one
-    Luz:
-      local: fk_luz
       foreign: id
       type: one
 Localidad:
@@ -230,7 +230,7 @@ Localidad:
       fixed: false
       unsigned: false
       primary: false
-      default: '0.00'
+      default: '0.0000000000'
       notnull: true
       autoincrement: false
     y:
@@ -238,7 +238,7 @@ Localidad:
       fixed: false
       unsigned: false
       primary: false
-      default: '0.00'
+      default: '0.0000000000'
       notnull: true
       autoincrement: false
     fk_region:
@@ -289,12 +289,12 @@ Luz:
       notnull: true
       autoincrement: false
   relations:
-    TipoLuz:
-      local: fk_tipo_luz
-      foreign: id
-      type: one
     PotLuz:
       local: fk_pot_luz
+      foreign: id
+      type: one
+    TipoLuz:
+      local: fk_tipo_luz
       foreign: id
       type: one
     Usuario:
@@ -327,7 +327,7 @@ Pais:
       fixed: false
       unsigned: false
       primary: false
-      default: '0.00'
+      default: '0.0000000000'
       notnull: true
       autoincrement: false
     y:
@@ -335,7 +335,7 @@ Pais:
       fixed: false
       unsigned: false
       primary: false
-      default: '0.00'
+      default: '0.0000000000'
       notnull: true
       autoincrement: false
   relations:
@@ -456,7 +456,7 @@ Region:
       fixed: false
       unsigned: false
       primary: false
-      default: '0.00'
+      default: '0.0000000000'
       notnull: true
       autoincrement: false
     y:
@@ -464,7 +464,7 @@ Region:
       fixed: false
       unsigned: false
       primary: false
-      default: '0.00'
+      default: '0.0000000000'
       notnull: true
       autoincrement: false
     fk_pais:
@@ -577,7 +577,7 @@ Tarea:
       local: fk_id_planta
       foreign: id
       type: one
-    TipoTarea:
+    Tipotarea:
       local: fk_id_tipo_tarea
       foreign: id
       type: one
@@ -625,9 +625,9 @@ TipoLuz:
       local: id
       foreign: fk_tipo_luz
       type: many
-TipoTarea:
+Tipotarea:
   connection: doctrine
-  tableName: tipo_tarea
+  tableName: tipotarea
   columns:
     id:
       type: integer(4)
