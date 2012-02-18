@@ -1,0 +1,582 @@
+Feb 17 12:15:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 17 12:15:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 12:15:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 12:15:16 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Feb 17 12:15:16 symfony [info] {sfPHPView} Render "/home/hernan/pakal/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Feb 17 12:15:16 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Feb 17 12:15:16 symfony [info] {sfPHPView} Render "/home/hernan/pakal/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Feb 17 12:15:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 12:15:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 12:15:16 symfony [info] {sfWebDebugLogger} Configuration 83.21 ms (10)
+Feb 17 12:15:16 symfony [info] {sfWebDebugLogger} Factories 123.59 ms (1)
+Feb 17 12:15:16 symfony [info] {sfWebDebugLogger} Action "default/index" 0.12 ms (1)
+Feb 17 12:15:16 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.83 ms (1)
+Feb 17 12:15:16 symfony [info] {sfWebResponse} Send content (27708 o)
+Feb 17 14:52:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Feb 17 14:52:34 symfony [info] {myUser} Automatic user logout due to timeout
+Feb 17 14:52:34 symfony [info] {myUser} User is not authenticated
+Feb 17 14:52:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:52:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:52:34 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Feb 17 14:52:34 symfony [info] {sfPHPView} Render "/home/hernan/pakal/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Feb 17 14:52:34 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Feb 17 14:52:34 symfony [info] {sfPHPView} Render "/home/hernan/pakal/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Feb 17 14:52:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:52:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:52:34 symfony [info] {sfWebDebugLogger} Configuration 1.48 ms (9)
+Feb 17 14:52:34 symfony [info] {sfWebDebugLogger} Factories 32.46 ms (1)
+Feb 17 14:52:34 symfony [info] {sfWebDebugLogger} Action "default/index" 0.16 ms (1)
+Feb 17 14:52:34 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 10.39 ms (1)
+Feb 17 14:52:34 symfony [info] {sfWebResponse} Send content (28660 o)
+Feb 17 14:52:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pais with parameters array (  'module' => 'pais',  'action' => 'index',)
+Feb 17 14:52:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:52:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:52:45 symfony [info] {paisActions} Call "paisActions->executeIndex()"
+Feb 17 14:52:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:52:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nombre AS p__nombre, p.x AS p__x, p.y AS p__y FROM pais p - ()
+Feb 17 14:52:45 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pais/templates/indexSuccess.php"
+Feb 17 14:52:45 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:52:45 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:52:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:52:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:52:45 symfony [info] {sfWebDebugLogger} Configuration 18.99 ms (10)
+Feb 17 14:52:45 symfony [info] {sfWebDebugLogger} Factories 31.96 ms (1)
+Feb 17 14:52:45 symfony [info] {sfWebDebugLogger} Action "pais/index" 32.63 ms (1)
+Feb 17 14:52:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:52:45 symfony [info] {sfWebDebugLogger} View "Success" for "pais/index" 15.89 ms (1)
+Feb 17 14:52:45 symfony [info] {sfWebResponse} Send content (29465 o)
+Feb 17 14:53:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /region with parameters array (  'module' => 'region',  'action' => 'index',)
+Feb 17 14:53:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:01 symfony [info] {regionActions} Call "regionActions->executeIndex()"
+Feb 17 14:53:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:53:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nombre AS r__nombre, r.x AS r__x, r.y AS r__y, r.fk_pais AS r__fk_pais FROM region r - ()
+Feb 17 14:53:01 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/indexSuccess.php"
+Feb 17 14:53:02 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:02 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:53:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:02 symfony [info] {sfWebDebugLogger} Configuration 18.99 ms (10)
+Feb 17 14:53:02 symfony [info] {sfWebDebugLogger} Factories 26.46 ms (1)
+Feb 17 14:53:02 symfony [info] {sfWebDebugLogger} Action "region/index" 35.48 ms (1)
+Feb 17 14:53:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:53:02 symfony [info] {sfWebDebugLogger} View "Success" for "region/index" 31.09 ms (1)
+Feb 17 14:53:02 symfony [info] {sfWebResponse} Send content (34274 o)
+Feb 17 14:53:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /localidad with parameters array (  'module' => 'localidad',  'action' => 'index',)
+Feb 17 14:53:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:20 symfony [info] {localidadActions} Call "localidadActions->executeIndex()"
+Feb 17 14:53:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:53:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT l.id AS l__id, l.nombre AS l__nombre, l.x AS l__x, l.y AS l__y, l.fk_region AS l__fk_region FROM localidad l - ()
+Feb 17 14:53:25 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/localidad/templates/indexSuccess.php"
+Feb 17 14:53:28 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:28 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:53:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:28 symfony [info] {sfWebDebugLogger} Configuration 18.69 ms (10)
+Feb 17 14:53:28 symfony [info] {sfWebDebugLogger} Factories 26.55 ms (1)
+Feb 17 14:53:28 symfony [info] {sfWebDebugLogger} Action "localidad/index" 4827.33 ms (1)
+Feb 17 14:53:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:53:28 symfony [info] {sfWebDebugLogger} View "Success" for "localidad/index" 3501.38 ms (1)
+Feb 17 14:53:28 symfony [info] {sfWebResponse} Send content (1011459 o)
+Feb 17 14:53:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pepe with parameters array (  'module' => 'pepe',  'action' => 'index',)
+Feb 17 14:53:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:39 symfony [info] {pepeActions} Call "pepeActions->executeIndex()"
+Feb 17 14:53:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:53:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p - ()
+Feb 17 14:53:39 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/indexSuccess.php"
+Feb 17 14:53:39 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:39 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:53:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:39 symfony [info] {sfWebDebugLogger} Configuration 18.70 ms (10)
+Feb 17 14:53:39 symfony [info] {sfWebDebugLogger} Factories 32.00 ms (1)
+Feb 17 14:53:39 symfony [info] {sfWebDebugLogger} Action "pepe/index" 30.85 ms (1)
+Feb 17 14:53:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:53:39 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/index" 13.00 ms (1)
+Feb 17 14:53:39 symfony [info] {sfWebResponse} Send content (29040 o)
+Feb 17 14:53:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /pepe/new with parameters array (  'module' => 'pepe',  'action' => 'new',)
+Feb 17 14:53:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:43 symfony [info] {pepeActions} Call "pepeActions->executeNew()"
+Feb 17 14:53:43 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/newSuccess.php"
+Feb 17 14:53:43 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/_form.php"
+Feb 17 14:53:43 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:43 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:53:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:43 symfony [info] {sfWebDebugLogger} Configuration 1.48 ms (9)
+Feb 17 14:53:43 symfony [info] {sfWebDebugLogger} Factories 26.57 ms (1)
+Feb 17 14:53:43 symfony [info] {sfWebDebugLogger} Action "pepe/new" 19.67 ms (1)
+Feb 17 14:53:43 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/new" 13.75 ms (1)
+Feb 17 14:53:43 symfony [info] {sfWebDebugLogger} Partial "pepe/_form" 4.03 ms (1)
+Feb 17 14:53:43 symfony [info] {sfWebResponse} Send content (30100 o)
+Feb 17 14:53:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /pepe/create with parameters array (  'module' => 'pepe',  'action' => 'create',)
+Feb 17 14:53:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:50 symfony [info] {pepeActions} Call "pepeActions->executeCreate()"
+Feb 17 14:53:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:53:50 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO pepe (pepe) VALUES (?) - (mamá)
+Feb 17 14:53:50 symfony [info] {sfFrontWebController} Redirect to "http://www.pakal.com/frontend_dev.php/pepe/edit/id/1"
+Feb 17 14:53:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 17 14:53:50 symfony [info] {sfWebResponse} Send header "Location: http://www.pakal.com/frontend_dev.php/pepe/edit/id/1"
+Feb 17 14:53:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Configuration 1.46 ms (8)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Factories 26.82 ms (1)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Action "pepe/create" 89.13 ms (1)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:53:50 symfony [info] {sfWebResponse} Send content (123 o)
+Feb 17 14:53:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /pepe/edit/id/1 with parameters array (  'module' => 'pepe',  'action' => 'edit',  'id' => '1',)
+Feb 17 14:53:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:50 symfony [info] {pepeActions} Call "pepeActions->executeEdit()"
+Feb 17 14:53:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:53:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p WHERE (p.id = ?) LIMIT 1 - (1)
+Feb 17 14:53:50 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/editSuccess.php"
+Feb 17 14:53:50 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/_form.php"
+Feb 17 14:53:50 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:50 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:53:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Configuration 1.38 ms (9)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Factories 26.83 ms (1)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Action "pepe/edit" 47.72 ms (1)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/edit" 15.55 ms (1)
+Feb 17 14:53:50 symfony [info] {sfWebDebugLogger} Partial "pepe/_form" 5.58 ms (1)
+Feb 17 14:53:50 symfony [info] {sfWebResponse} Send content (33702 o)
+Feb 17 14:53:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pepe with parameters array (  'module' => 'pepe',  'action' => 'index',)
+Feb 17 14:53:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:53 symfony [info] {pepeActions} Call "pepeActions->executeIndex()"
+Feb 17 14:53:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:53:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p - ()
+Feb 17 14:53:53 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/indexSuccess.php"
+Feb 17 14:53:53 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:53 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:53:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:53 symfony [info] {sfWebDebugLogger} Configuration 1.70 ms (9)
+Feb 17 14:53:53 symfony [info] {sfWebDebugLogger} Factories 27.64 ms (1)
+Feb 17 14:53:53 symfony [info] {sfWebDebugLogger} Action "pepe/index" 25.46 ms (1)
+Feb 17 14:53:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:53:53 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/index" 11.41 ms (1)
+Feb 17 14:53:53 symfony [info] {sfWebResponse} Send content (29227 o)
+Feb 17 14:53:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pepe with parameters array (  'module' => 'pepe',  'action' => 'index',)
+Feb 17 14:53:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:53:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:53:55 symfony [info] {pepeActions} Call "pepeActions->executeIndex()"
+Feb 17 14:53:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:53:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p - ()
+Feb 17 14:53:55 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/indexSuccess.php"
+Feb 17 14:53:55 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:55 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:53:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:53:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:53:55 symfony [info] {sfWebDebugLogger} Configuration 1.73 ms (9)
+Feb 17 14:53:55 symfony [info] {sfWebDebugLogger} Factories 34.91 ms (1)
+Feb 17 14:53:55 symfony [info] {sfWebDebugLogger} Action "pepe/index" 36.21 ms (1)
+Feb 17 14:53:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:53:55 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/index" 13.17 ms (1)
+Feb 17 14:53:55 symfony [info] {sfWebResponse} Send content (29259 o)
+Feb 17 14:54:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /pepe/new with parameters array (  'module' => 'pepe',  'action' => 'new',)
+Feb 17 14:54:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:54:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:54:01 symfony [info] {pepeActions} Call "pepeActions->executeNew()"
+Feb 17 14:54:01 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/newSuccess.php"
+Feb 17 14:54:01 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/_form.php"
+Feb 17 14:54:01 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:01 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:54:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:54:01 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (9)
+Feb 17 14:54:01 symfony [info] {sfWebDebugLogger} Factories 27.20 ms (1)
+Feb 17 14:54:01 symfony [info] {sfWebDebugLogger} Action "pepe/new" 17.12 ms (1)
+Feb 17 14:54:01 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/new" 12.67 ms (1)
+Feb 17 14:54:01 symfony [info] {sfWebDebugLogger} Partial "pepe/_form" 3.62 ms (1)
+Feb 17 14:54:01 symfony [info] {sfWebResponse} Send content (30100 o)
+Feb 17 14:54:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /pepe/create with parameters array (  'module' => 'pepe',  'action' => 'create',)
+Feb 17 14:54:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:54:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:54:08 symfony [info] {pepeActions} Call "pepeActions->executeCreate()"
+Feb 17 14:54:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:54:08 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO pepe (pepe) VALUES (?) - (españa)
+Feb 17 14:54:08 symfony [info] {sfFrontWebController} Redirect to "http://www.pakal.com/frontend_dev.php/pepe/edit/id/2"
+Feb 17 14:54:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 17 14:54:08 symfony [info] {sfWebResponse} Send header "Location: http://www.pakal.com/frontend_dev.php/pepe/edit/id/2"
+Feb 17 14:54:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (8)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Factories 26.69 ms (1)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Action "pepe/create" 97.03 ms (1)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:54:08 symfony [info] {sfWebResponse} Send content (123 o)
+Feb 17 14:54:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /pepe/edit/id/2 with parameters array (  'module' => 'pepe',  'action' => 'edit',  'id' => '2',)
+Feb 17 14:54:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:54:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:54:08 symfony [info] {pepeActions} Call "pepeActions->executeEdit()"
+Feb 17 14:54:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:54:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p WHERE (p.id = ?) LIMIT 1 - (2)
+Feb 17 14:54:08 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/editSuccess.php"
+Feb 17 14:54:08 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/_form.php"
+Feb 17 14:54:08 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:08 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:54:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (9)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Factories 26.64 ms (1)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Action "pepe/edit" 40.55 ms (1)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/edit" 17.09 ms (1)
+Feb 17 14:54:08 symfony [info] {sfWebDebugLogger} Partial "pepe/_form" 5.98 ms (1)
+Feb 17 14:54:08 symfony [info] {sfWebResponse} Send content (33704 o)
+Feb 17 14:54:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pepe with parameters array (  'module' => 'pepe',  'action' => 'index',)
+Feb 17 14:54:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:54:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:54:09 symfony [info] {pepeActions} Call "pepeActions->executeIndex()"
+Feb 17 14:54:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:54:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p - ()
+Feb 17 14:54:09 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/indexSuccess.php"
+Feb 17 14:54:09 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:09 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:54:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:54:09 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (9)
+Feb 17 14:54:09 symfony [info] {sfWebDebugLogger} Factories 27.42 ms (1)
+Feb 17 14:54:09 symfony [info] {sfWebDebugLogger} Action "pepe/index" 28.73 ms (1)
+Feb 17 14:54:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:54:09 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/index" 12.38 ms (1)
+Feb 17 14:54:10 symfony [info] {sfWebResponse} Send content (29337 o)
+Feb 17 14:54:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pepe with parameters array (  'module' => 'pepe',  'action' => 'index',)
+Feb 17 14:54:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:54:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:54:12 symfony [info] {pepeActions} Call "pepeActions->executeIndex()"
+Feb 17 14:54:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:54:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p - ()
+Feb 17 14:54:12 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/indexSuccess.php"
+Feb 17 14:54:12 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:12 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:54:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:54:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:54:12 symfony [info] {sfWebDebugLogger} Configuration 1.49 ms (9)
+Feb 17 14:54:12 symfony [info] {sfWebDebugLogger} Factories 26.73 ms (1)
+Feb 17 14:54:12 symfony [info] {sfWebDebugLogger} Action "pepe/index" 27.63 ms (1)
+Feb 17 14:54:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:54:12 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/index" 12.51 ms (1)
+Feb 17 14:54:12 symfony [info] {sfWebResponse} Send content (29369 o)
+Feb 17 14:56:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /pepe with parameters array (  'module' => 'pepe',  'action' => 'index',)
+Feb 17 14:56:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 14:56:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 14:56:50 symfony [info] {pepeActions} Call "pepeActions->executeIndex()"
+Feb 17 14:56:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 14:56:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.pepe AS p__pepe FROM pepe p - ()
+Feb 17 14:56:50 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/pepe/templates/indexSuccess.php"
+Feb 17 14:56:50 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:56:50 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 14:56:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 14:56:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 14:56:50 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (9)
+Feb 17 14:56:50 symfony [info] {sfWebDebugLogger} Factories 26.40 ms (1)
+Feb 17 14:56:50 symfony [info] {sfWebDebugLogger} Action "pepe/index" 25.60 ms (1)
+Feb 17 14:56:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 14:56:50 symfony [info] {sfWebDebugLogger} View "Success" for "pepe/index" 11.82 ms (1)
+Feb 17 14:56:50 symfony [info] {sfWebResponse} Send content (29479 o)
+Feb 17 15:10:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /localidad with parameters array (  'module' => 'localidad',  'action' => 'index',)
+Feb 17 15:10:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:10:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:10:23 symfony [info] {localidadActions} Call "localidadActions->executeIndex()"
+Feb 17 15:10:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:10:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT l.id AS l__id, l.nombre AS l__nombre, l.x AS l__x, l.y AS l__y, l.fk_region AS l__fk_region FROM localidad l - ()
+Feb 17 15:10:23 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/localidad/templates/indexSuccess.php"
+Feb 17 15:10:23 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:10:23 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:10:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:10:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:10:23 symfony [info] {sfWebDebugLogger} Configuration 1.57 ms (9)
+Feb 17 15:10:23 symfony [info] {sfWebDebugLogger} Factories 27.02 ms (1)
+Feb 17 15:10:23 symfony [info] {sfWebDebugLogger} Action "localidad/index" 30.69 ms (1)
+Feb 17 15:10:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 15:10:23 symfony [info] {sfWebDebugLogger} View "Success" for "localidad/index" 9.62 ms (1)
+Feb 17 15:10:23 symfony [info] {sfWebResponse} Send content (29601 o)
+Feb 17 15:19:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /region with parameters array (  'module' => 'region',  'action' => 'index',)
+Feb 17 15:19:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:14 symfony [info] {regionActions} Call "regionActions->executeIndex()"
+Feb 17 15:19:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nombre AS r__nombre, r.x AS r__x, r.y AS r__y, r.fk_pais AS r__fk_pais FROM region r - ()
+Feb 17 15:19:14 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/indexSuccess.php"
+Feb 17 15:19:14 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:14 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:19:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:14 symfony [info] {sfWebDebugLogger} Configuration 1.57 ms (9)
+Feb 17 15:19:14 symfony [info] {sfWebDebugLogger} Factories 26.63 ms (1)
+Feb 17 15:19:14 symfony [info] {sfWebDebugLogger} Action "region/index" 32.49 ms (1)
+Feb 17 15:19:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 15:19:14 symfony [info] {sfWebDebugLogger} View "Success" for "region/index" 26.87 ms (1)
+Feb 17 15:19:14 symfony [info] {sfWebResponse} Send content (33869 o)
+Feb 17 15:19:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /region/new with parameters array (  'module' => 'region',  'action' => 'new',)
+Feb 17 15:19:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:18 symfony [info] {regionActions} Call "regionActions->executeNew()"
+Feb 17 15:19:18 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/newSuccess.php"
+Feb 17 15:19:18 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/_form.php"
+Feb 17 15:19:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nombre AS p__nombre, p.x AS p__x, p.y AS p__y FROM pais p - ()
+Feb 17 15:19:18 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:18 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:19:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:18 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+Feb 17 15:19:18 symfony [info] {sfWebDebugLogger} Factories 26.60 ms (1)
+Feb 17 15:19:18 symfony [info] {sfWebDebugLogger} Action "region/new" 21.52 ms (1)
+Feb 17 15:19:18 symfony [info] {sfWebDebugLogger} View "Success" for "region/new" 36.60 ms (1)
+Feb 17 15:19:18 symfony [info] {sfWebDebugLogger} Partial "region/_form" 27.65 ms (1)
+Feb 17 15:19:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 15:19:18 symfony [info] {sfWebResponse} Send content (34677 o)
+Feb 17 15:19:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /region/create with parameters array (  'module' => 'region',  'action' => 'create',)
+Feb 17 15:19:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:30 symfony [info] {regionActions} Call "regionActions->executeCreate()"
+Feb 17 15:19:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id = ? - (5)
+Feb 17 15:19:30 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO region (x, y, nombre, fk_pais) VALUES (?, ?, ?, ?) - (0.0000000000, 0.0000000000, mamáÑ, 5)
+Feb 17 15:19:30 symfony [info] {sfFrontWebController} Redirect to "http://www.pakal.com/frontend_dev.php/region/edit/id/"
+Feb 17 15:19:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 17 15:19:30 symfony [info] {sfWebResponse} Send header "Location: http://www.pakal.com/frontend_dev.php/region/edit/id/"
+Feb 17 15:19:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Configuration 1.37 ms (8)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Factories 28.66 ms (1)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Action "region/create" 122.81 ms (1)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Feb 17 15:19:30 symfony [info] {sfWebResponse} Send content (124 o)
+Feb 17 15:19:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /region/edit/id/ with parameters array (  'module' => 'region',  'action' => 'edit',  'id' => '',)
+Feb 17 15:19:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:30 symfony [info] {regionActions} Call "regionActions->executeEdit()"
+Feb 17 15:19:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nombre AS r__nombre, r.x AS r__x, r.y AS r__y, r.fk_pais AS r__fk_pais FROM region r WHERE (r.id = ?) LIMIT 1 - ()
+Feb 17 15:19:30 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/editSuccess.php"
+Feb 17 15:19:30 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/_form.php"
+Feb 17 15:19:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nombre AS p__nombre, p.x AS p__x, p.y AS p__y FROM pais p - ()
+Feb 17 15:19:30 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:30 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:19:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Configuration 1.42 ms (9)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Factories 26.43 ms (1)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Action "region/edit" 50.23 ms (1)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} View "Success" for "region/edit" 22.49 ms (1)
+Feb 17 15:19:30 symfony [info] {sfWebDebugLogger} Partial "region/_form" 12.16 ms (1)
+Feb 17 15:19:30 symfony [info] {sfWebResponse} Send content (37181 o)
+Feb 17 15:19:32 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /region with parameters array (  'module' => 'region',  'action' => 'index',)
+Feb 17 15:19:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:32 symfony [info] {regionActions} Call "regionActions->executeIndex()"
+Feb 17 15:19:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nombre AS r__nombre, r.x AS r__x, r.y AS r__y, r.fk_pais AS r__fk_pais FROM region r - ()
+Feb 17 15:19:32 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/indexSuccess.php"
+Feb 17 15:19:32 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:32 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:19:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:32 symfony [info] {sfWebDebugLogger} Configuration 1.44 ms (9)
+Feb 17 15:19:32 symfony [info] {sfWebDebugLogger} Factories 26.33 ms (1)
+Feb 17 15:19:32 symfony [info] {sfWebDebugLogger} Action "region/index" 29.64 ms (1)
+Feb 17 15:19:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 15:19:32 symfony [info] {sfWebDebugLogger} View "Success" for "region/index" 27.33 ms (1)
+Feb 17 15:19:32 symfony [info] {sfWebResponse} Send content (34088 o)
+Feb 17 15:19:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /region/edit/id/0 with parameters array (  'module' => 'region',  'action' => 'edit',  'id' => '0',)
+Feb 17 15:19:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:39 symfony [info] {regionActions} Call "regionActions->executeEdit()"
+Feb 17 15:19:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nombre AS r__nombre, r.x AS r__x, r.y AS r__y, r.fk_pais AS r__fk_pais FROM region r WHERE (r.id = ?) LIMIT 1 - (0)
+Feb 17 15:19:39 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/editSuccess.php"
+Feb 17 15:19:39 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/_form.php"
+Feb 17 15:19:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.nombre AS p__nombre, p.x AS p__x, p.y AS p__y FROM pais p - ()
+Feb 17 15:19:39 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:39 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:19:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:39 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (9)
+Feb 17 15:19:39 symfony [info] {sfWebDebugLogger} Factories 26.88 ms (1)
+Feb 17 15:19:39 symfony [info] {sfWebDebugLogger} Action "region/edit" 50.09 ms (1)
+Feb 17 15:19:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Feb 17 15:19:39 symfony [info] {sfWebDebugLogger} View "Success" for "region/edit" 22.67 ms (1)
+Feb 17 15:19:39 symfony [info] {sfWebDebugLogger} Partial "region/_form" 12.24 ms (1)
+Feb 17 15:19:39 symfony [info] {sfWebResponse} Send content (37186 o)
+Feb 17 15:19:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /region/delete/id/0 with parameters array (  'module' => 'region',  'action' => 'delete',  'id' => '0',)
+Feb 17 15:19:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:41 symfony [info] {regionActions} Call "regionActions->executeDelete()"
+Feb 17 15:19:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nombre AS r__nombre, r.x AS r__x, r.y AS r__y, r.fk_pais AS r__fk_pais FROM region r WHERE (r.id = ?) LIMIT 1 - (0)
+Feb 17 15:19:41 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM region WHERE id = ? - (0)
+Feb 17 15:19:42 symfony [info] {sfFrontWebController} Redirect to "http://www.pakal.com/frontend_dev.php/region"
+Feb 17 15:19:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Feb 17 15:19:42 symfony [info] {sfWebResponse} Send header "Location: http://www.pakal.com/frontend_dev.php/region"
+Feb 17 15:19:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Configuration 1.48 ms (8)
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Factories 26.37 ms (1)
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Action "region/delete" 124.26 ms (1)
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Feb 17 15:19:42 symfony [info] {sfWebResponse} Send content (115 o)
+Feb 17 15:19:42 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /region with parameters array (  'module' => 'region',  'action' => 'index',)
+Feb 17 15:19:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:19:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:19:42 symfony [info] {regionActions} Call "regionActions->executeIndex()"
+Feb 17 15:19:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:19:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id AS r__id, r.nombre AS r__nombre, r.x AS r__x, r.y AS r__y, r.fk_pais AS r__fk_pais FROM region r - ()
+Feb 17 15:19:42 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/region/templates/indexSuccess.php"
+Feb 17 15:19:42 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:42 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:19:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:19:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (9)
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Factories 26.23 ms (1)
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Action "region/index" 34.37 ms (1)
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 15:19:42 symfony [info] {sfWebDebugLogger} View "Success" for "region/index" 28.08 ms (1)
+Feb 17 15:19:42 symfony [info] {sfWebResponse} Send content (33920 o)
+Feb 17 15:23:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /localidad with parameters array (  'module' => 'localidad',  'action' => 'index',)
+Feb 17 15:23:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:23:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:23:52 symfony [info] {localidadActions} Call "localidadActions->executeIndex()"
+Feb 17 15:23:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:23:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT l.id AS l__id, l.nombre AS l__nombre, l.x AS l__x, l.y AS l__y, l.fk_region AS l__fk_region FROM localidad l - ()
+Feb 17 15:23:57 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/localidad/templates/indexSuccess.php"
+Feb 17 15:24:00 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:24:00 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:24:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:24:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:24:00 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (9)
+Feb 17 15:24:00 symfony [info] {sfWebDebugLogger} Factories 29.85 ms (1)
+Feb 17 15:24:00 symfony [info] {sfWebDebugLogger} Action "localidad/index" 4778.86 ms (1)
+Feb 17 15:24:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 15:24:00 symfony [info] {sfWebDebugLogger} View "Success" for "localidad/index" 3303.53 ms (1)
+Feb 17 15:24:00 symfony [info] {sfWebResponse} Send content (925673 o)
+Feb 17 15:28:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /localidad with parameters array (  'module' => 'localidad',  'action' => 'index',)
+Feb 17 15:28:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 15:28:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 15:28:59 symfony [info] {localidadActions} Call "localidadActions->executeIndex()"
+Feb 17 15:28:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 15:28:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT l.id AS l__id, l.nombre AS l__nombre, l.x AS l__x, l.y AS l__y, l.fk_region AS l__fk_region FROM localidad l - ()
+Feb 17 15:29:04 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/localidad/templates/indexSuccess.php"
+Feb 17 15:29:07 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:29:07 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 15:29:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 15:29:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 15:29:07 symfony [info] {sfWebDebugLogger} Configuration 1.58 ms (9)
+Feb 17 15:29:07 symfony [info] {sfWebDebugLogger} Factories 27.81 ms (1)
+Feb 17 15:29:07 symfony [info] {sfWebDebugLogger} Action "localidad/index" 4933.31 ms (1)
+Feb 17 15:29:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 15:29:07 symfony [info] {sfWebDebugLogger} View "Success" for "localidad/index" 3301.78 ms (1)
+Feb 17 15:29:07 symfony [info] {sfWebResponse} Send content (999769 o)
+Feb 17 17:21:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /localidad with parameters array (  'module' => 'localidad',  'action' => 'index',)
+Feb 17 17:21:59 symfony [info] {myUser} Automatic user logout due to timeout
+Feb 17 17:21:59 symfony [info] {myUser} User is not authenticated
+Feb 17 17:21:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 17:21:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 17:21:59 symfony [info] {localidadActions} Call "localidadActions->executeIndex()"
+Feb 17 17:21:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 17:21:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT l.id AS l__id, l.nombre AS l__nombre, l.x AS l__x, l.y AS l__y, l.fk_region AS l__fk_region FROM localidad l - ()
+Feb 17 17:22:04 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/localidad/templates/indexSuccess.php"
+Feb 17 17:22:07 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:07 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 17:22:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 17:22:07 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (9)
+Feb 17 17:22:07 symfony [info] {sfWebDebugLogger} Factories 29.67 ms (1)
+Feb 17 17:22:07 symfony [info] {sfWebDebugLogger} Action "localidad/index" 5188.01 ms (1)
+Feb 17 17:22:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 17:22:07 symfony [info] {sfWebDebugLogger} View "Success" for "localidad/index" 3333.03 ms (1)
+Feb 17 17:22:07 symfony [info] {sfWebResponse} Send content (1000478 o)
+Feb 17 17:22:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usuario with parameters array (  'module' => 'usuario',  'action' => 'index',)
+Feb 17 17:22:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 17:22:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 17:22:29 symfony [info] {usuarioActions} Call "usuarioActions->executeIndex()"
+Feb 17 17:22:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 17:22:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.nombre AS u__nombre, u.apellido AS u__apellido, u.nick AS u__nick, u.email AS u__email, u.fk_localidad AS u__fk_localidad FROM usuario u - ()
+Feb 17 17:22:29 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/usuario/templates/indexSuccess.php"
+Feb 17 17:22:29 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:29 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 17:22:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 17:22:29 symfony [info] {sfWebDebugLogger} Configuration 25.98 ms (10)
+Feb 17 17:22:29 symfony [info] {sfWebDebugLogger} Factories 44.84 ms (1)
+Feb 17 17:22:29 symfony [info] {sfWebDebugLogger} Action "usuario/index" 41.70 ms (1)
+Feb 17 17:22:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 17:22:29 symfony [info] {sfWebDebugLogger} View "Success" for "usuario/index" 42.73 ms (1)
+Feb 17 17:22:29 symfony [info] {sfWebResponse} Send content (29915 o)
+Feb 17 17:22:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /usuario/new with parameters array (  'module' => 'usuario',  'action' => 'new',)
+Feb 17 17:22:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 17:22:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 17:22:30 symfony [info] {usuarioActions} Call "usuarioActions->executeNew()"
+Feb 17 17:22:30 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/usuario/templates/newSuccess.php"
+Feb 17 17:22:30 symfony [info] {sfPartialView} Render "/home/hernan/pakal/apps/frontend/modules/usuario/templates/_form.php"
+Feb 17 17:22:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 17:22:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT l.id AS l__id, l.nombre AS l__nombre, l.x AS l__x, l.y AS l__y, l.fk_region AS l__fk_region FROM localidad l - ()
+Feb 17 17:22:42 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:42 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 17:22:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 17:22:42 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (9)
+Feb 17 17:22:42 symfony [info] {sfWebDebugLogger} Factories 10.12 ms (1)
+Feb 17 17:22:42 symfony [info] {sfWebDebugLogger} Action "usuario/new" 23.56 ms (1)
+Feb 17 17:22:42 symfony [info] {sfWebDebugLogger} View "Success" for "usuario/new" 11124.90 ms (1)
+Feb 17 17:22:42 symfony [info] {sfWebDebugLogger} Partial "usuario/_form" 11118.28 ms (1)
+Feb 17 17:22:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 17:22:42 symfony [info] {sfWebResponse} Send content (216274 o)
+Feb 17 17:22:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usuario with parameters array (  'module' => 'usuario',  'action' => 'index',)
+Feb 17 17:22:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 17:22:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 17:22:45 symfony [info] {usuarioActions} Call "usuarioActions->executeIndex()"
+Feb 17 17:22:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 17:22:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.nombre AS u__nombre, u.apellido AS u__apellido, u.nick AS u__nick, u.email AS u__email, u.fk_localidad AS u__fk_localidad FROM usuario u - ()
+Feb 17 17:22:45 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/usuario/templates/indexSuccess.php"
+Feb 17 17:22:45 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:45 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:22:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 17:22:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 17:22:45 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (9)
+Feb 17 17:22:45 symfony [info] {sfWebDebugLogger} Factories 9.65 ms (1)
+Feb 17 17:22:45 symfony [info] {sfWebDebugLogger} Action "usuario/index" 11.99 ms (1)
+Feb 17 17:22:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 17:22:45 symfony [info] {sfWebDebugLogger} View "Success" for "usuario/index" 5.15 ms (1)
+Feb 17 17:22:45 symfony [info] {sfWebResponse} Send content (29986 o)
+Feb 17 17:23:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usuario with parameters array (  'module' => 'usuario',  'action' => 'index',)
+Feb 17 17:23:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 17:23:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 17:23:55 symfony [info] {usuarioActions} Call "usuarioActions->executeIndex()"
+Feb 17 17:23:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 17:23:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.nombre AS u__nombre, u.apellido AS u__apellido, u.nick AS u__nick, u.email AS u__email, u.fk_localidad AS u__fk_localidad FROM usuario u - ()
+Feb 17 17:23:55 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/usuario/templates/indexSuccess.php"
+Feb 17 17:23:55 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:23:55 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:23:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 17:23:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 17:23:55 symfony [info] {sfWebDebugLogger} Configuration 1.38 ms (9)
+Feb 17 17:23:55 symfony [info] {sfWebDebugLogger} Factories 11.20 ms (1)
+Feb 17 17:23:55 symfony [info] {sfWebDebugLogger} Action "usuario/index" 11.02 ms (1)
+Feb 17 17:23:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 17:23:55 symfony [info] {sfWebDebugLogger} View "Success" for "usuario/index" 5.24 ms (1)
+Feb 17 17:23:55 symfony [info] {sfWebResponse} Send content (29909 o)
+Feb 17 17:42:42 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /usuario with parameters array (  'module' => 'usuario',  'action' => 'index',)
+Feb 17 17:42:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 17 17:42:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 17 17:42:42 symfony [info] {usuarioActions} Call "usuarioActions->executeIndex()"
+Feb 17 17:42:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 17 17:42:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.nombre AS u__nombre, u.apellido AS u__apellido, u.nick AS u__nick, u.email AS u__email, u.fk_localidad AS u__fk_localidad FROM usuario u - ()
+Feb 17 17:42:42 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/modules/usuario/templates/indexSuccess.php"
+Feb 17 17:42:42 symfony [info] {sfPHPView} Decorate content with "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:42:42 symfony [info] {sfPHPView} Render "/home/hernan/pakal/apps/frontend/templates/layout.php"
+Feb 17 17:42:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 17 17:42:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 17 17:42:42 symfony [info] {sfWebDebugLogger} Configuration 2.38 ms (9)
+Feb 17 17:42:42 symfony [info] {sfWebDebugLogger} Factories 43.93 ms (1)
+Feb 17 17:42:42 symfony [info] {sfWebDebugLogger} Action "usuario/index" 44.98 ms (1)
+Feb 17 17:42:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 17 17:42:42 symfony [info] {sfWebDebugLogger} View "Success" for "usuario/index" 15.14 ms (1)
+Feb 17 17:42:42 symfony [info] {sfWebResponse} Send content (29944 o)
